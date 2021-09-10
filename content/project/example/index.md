@@ -7,9 +7,7 @@ date: 2016-04-27T00:00:00.000Z
 external_link: ""
 url_slides: ""
 title: Approximating incomplete data with varieties
-tags:
-  - Algebraic Geometry
-  - Incomplete Data
+tags: []
 links: []
 image:
   caption: ""
