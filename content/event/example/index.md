@@ -8,13 +8,13 @@ abstract: "The process for solving rubiks cubes can often involve memorizing
   the way. "
 slides: ""
 url_pdf: ""
-summary: 
+summary: null
 title: "Applying group theory to solve rubiks cubes "
 location: |-
   UW Madison Math Dept,
   Van Vleck 901
-date: 2030-06-01T13:00:00.000Z
-date_end: 2030-06-01T15:00:00.000Z
+date: 2021-09-30T13:00:00.000Z
+date_end: 2021-09-30T15:00:00.000Z
 all_day: false
 event: AMS Student Chapter Seminar
 event_url: https://hilbert.math.wisc.edu/wiki/index.php/AMS_Student_Chapter_Seminar
