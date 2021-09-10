@@ -7,7 +7,7 @@ abstract: "In this talk, I will explore the work of Kileel, Trager, and Bruna in
   variety and the expressive power of this network are related, and 3) how the
   study of these varieties might tell us something about the architecture of the
   network. "
-location: UW Madison Graduate Algebraic Geometry Seminar
+location: UW Madison Math Department
 date: 2021-10-06T21:00:27.803Z
 date_end: 2021-10-06T22:00:00.000Z
 all_day: false
