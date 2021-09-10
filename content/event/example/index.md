@@ -16,8 +16,8 @@ location: |-
 date: 2030-06-01T13:00:00.000Z
 date_end: 2030-06-01T15:00:00.000Z
 all_day: false
-event: Donut Seminar
-event_url: "-"
+event: AMS Student Chapter Seminar
+event_url: https://hilbert.math.wisc.edu/wiki/index.php/AMS_Student_Chapter_Seminar
 featured: false
 authors: []
 url_video: ""
