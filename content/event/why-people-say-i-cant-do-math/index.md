@@ -1,6 +1,6 @@
 ---
 title: Why people say "I can't do math"
-abstract: "{{< youtube https://www.youtube.com/watch?v=HfjZE5V6LYE >}}"
+abstract: "{{< youtube HfjZE5V6LYE >}}"
 location: Park City Math Institute
 date: 2019-07-16T15:00:05.322Z
 date_end: 2019-07-17T04:00:00.000Z
