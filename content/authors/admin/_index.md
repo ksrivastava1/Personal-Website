@@ -16,7 +16,7 @@ social:
     link: https://github.com/ksrivastava1
   - display:
       header: false
-    icon_pack: fas
+    icon_pack: ai
     icon: cv
     link: https://google.com
 organizations:
