@@ -35,5 +35,3 @@ superuser: true
 highlight_name: true
 ---
 I'm a second year PhD student in mathematics. I'm broadly interested in algebraic geometry and machine learning. Some questions I'm currently pondering include how machine learning can be used as a tool to aid mathematicians, how can algebraic varieties be used to approximate data, and what connections can we find between algebraic geometry and machine learning
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
