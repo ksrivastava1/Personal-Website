@@ -39,7 +39,9 @@ experience:
     location: Urbana-Champaign
     date_start: '2016-08-15'
     date_end: '2020-05-15'
-    description: I took various graduate level courses in algebraic geometry, commutative algebra, and algebraic topology at UIUC. I had the opportunity to work on research projects with Susan Tolman, studying Cremona transformations on Symplectic Manifolds, Dominic Culver, in studying Weierstrass equations for elliptic curves, and Zoi Rapti, in studying mathematical models of coevolutionary biology. I also took some time to explore the math world in a literal sense, and participated in the Math in Moscow study abroad program in my third year - a challenging and engaging experience that shaped my early interest in algebraic geometry. 
+    description: I took various graduate level courses in algebraic geometry, commutative algebra, and algebraic topology at UIUC. I had the opportunity to work on research projects with Susan Tolman, studying Cremona transformations on Symplectic Manifolds, Dominic Culver, in studying Weierstrass equations for elliptic curves, and Zoi Rapti, in studying mathematical models of coevolutionary biology. 
+
+    I also took some time to explore the math world in a literal sense, and participated in the Math in Moscow study abroad program in my third year - a challenging and engaging experience that shaped my early interest in algebraic geometry. 
 
 design:
   columns: '2'

@@ -6,8 +6,8 @@ abstract: "Mathematicians and math educators often hear the phrase \"I can't do
   But in many education systems today, many of us convince ourselves that math
   is beyond our capabilities. In this talk, I explore why that is. "
 location: Park City Math Institute
-date: 2019-07-16T15:00:05.322Z
-date_end: 2019-07-16T16:00:00.000Z
+date: 2019-07-16T10:00:05.322Z
+date_end: 2019-07-16T11:00:00.000Z
 all_day: false
 event: PCMI Ignite Talks
 event_url: https://www.youtube.com/watch?v=HfjZE5V6LYE
