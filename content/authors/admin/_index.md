@@ -6,7 +6,6 @@ bio: My research interests include algebraic geometry, number theory, and
 interests:
   - Algebraic Geometry
   - Machine Learning
-  - Optimization
 social:
   - icon: envelope
     icon_pack: fas
