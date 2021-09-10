@@ -18,7 +18,7 @@ social:
       header: false
     icon_pack: fas
     icon: cv
-    link: https://google.com
+    link: https://en.wikipedia.org/wiki/Curriculum_vitae
 organizations:
   - name: University of Wisconsin-Madison
     url: https://www.wisc.edu/
