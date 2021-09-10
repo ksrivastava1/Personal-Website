@@ -4,28 +4,24 @@ role: PhD Student, Mathematics
 bio: My research interests include algebraic geometry, number theory, and
   machine learning
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Algebraic Geometry
+  - Machine Learning
+  - Optimization
 social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: graduation-cap
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://github.com/ksrivastava1
+  - display:
+      header: false
+    icon_pack: fas
+    icon: CV
+    link: https://google.com
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: University of Wisconsin-Madison
+    url: https://www.wisc.edu/
 education:
   courses:
     - course: PhD in Artificial Intelligence
@@ -41,9 +37,6 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I'm a second year PhD student in mathematics. I'm broadly interested in algebraic geometry and machine learning. Some questions I'm currently pondering include how machine learning can be used as a tool to aid mathematicians, how can algebraic varieties be used to approximate data, and what connections can we find between algebraic geometry and machine learning
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
