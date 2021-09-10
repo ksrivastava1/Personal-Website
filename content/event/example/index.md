@@ -11,7 +11,7 @@ url_pdf: ""
 summary: 
 title: "Applying group theory to solve rubiks cubes "
 location: |-
-  UW Madison Math Dept
+  UW Madison Math Dept,
   Van Vleck 901
 date: 2030-06-01T13:00:00.000Z
 date_end: 2030-06-01T15:00:00.000Z
