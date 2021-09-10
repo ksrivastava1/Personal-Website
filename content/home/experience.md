@@ -22,28 +22,26 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: PhD in Mathematics
+    company: University of Wisconsin-Madison
     company_url: ''
-    company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
+    company_logo: 
+    location: Madison
+    date_start: '2020-08-15'
     date_end: ''
     description: |2-
-        Responsibilities include:
+        I am currently interested in problems in algebraic geometry and machine learning. I am curious about how machine learning can be used in algebraic geometry and number theory to inform conjectures and guide research; I am also interested in thinking about how tools from algebraic geometry can be used to solve problems in machine learning and data completion. I am also doing a graduate minor in Computer Science. 
         
-        * Analysing
-        * Modelling
-        * Deploying
-        
-  - title: Professor of Semiconductor Physics
-    company: University X
+  - title: BSc in Mathematics
+    company: University of Illinois at Urbana-Champaign
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    company_logo: 
+    location: Urbana-Champaign
+    date_start: '2016-08-15'
+    date_end: '2020-05-15'
+    description: I took various graduate level courses in algebraic geometry, commutative algebra, and algebraic topology at UIUC. I had the opportunity to work on research projects with Susan Tolman, studying Cremona transformations on Symplectic Manifolds, Dominic Culver, in studying Weierstrass equations for elliptic curves, and Zoi Rapti, in studying mathematical models of coevolutionary biology. 
+
+    I also took some time to explore the math world in a literal sense, and participated in the Math in Moscow study abroad program in my third year - a challenging and engaging experience that shaped my early interest in algebraic geometry. 
 
 design:
   columns: '2'
