@@ -24,15 +24,12 @@ organizations:
     url: https://www.wisc.edu/
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: PhD in Mathematics
+      institution: University of Wisconsin-Madison
+      year: 2025
+    - course: BSc in Mathematics
+      institution: University of Illinois at Urbana-Champaign
+      year: 2020
 email: ""
 superuser: true
 highlight_name: true
