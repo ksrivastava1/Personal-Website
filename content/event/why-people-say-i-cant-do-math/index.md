@@ -7,7 +7,7 @@ abstract: "Mathematicians and math educators often hear the phrase \"I can't do
   is beyond our capabilities. In this talk, I explore why that is. "
 location: Park City Math Institute
 date: 2019-07-16T15:00:05.322Z
-date_end: 2019-07-17T04:00:00.000Z
+date_end: 2019-07-16T16:00:00.000Z
 all_day: false
 event: PCMI Ignite Talks
 event_url: https://www.youtube.com/watch?v=HfjZE5V6LYE
