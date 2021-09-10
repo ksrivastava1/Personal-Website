@@ -8,7 +8,7 @@ abstract: "The process for solving rubiks cubes can often involve memorizing
   the way. "
 slides: ""
 url_pdf: ""
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: 
 title: "Applying group theory to solve rubiks cubes "
 location: |-
   UW Madison Math Dept
@@ -23,10 +23,10 @@ authors: []
 url_video: ""
 url_slides: ""
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: "94305"
+  street: 480 Lincoln Dr
+  city: Madison
+  region: WI
+  postcode: "53706"
   country: United States
 links: []
 publishDate: 2021-09-10T01:46:46.647Z
