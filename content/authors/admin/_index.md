@@ -17,7 +17,7 @@ social:
   - display:
       header: false
     icon_pack: fas
-    icon: CV
+    icon: cv
     link: https://google.com
 organizations:
   - name: University of Wisconsin-Madison
