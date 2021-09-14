@@ -1,6 +1,6 @@
 ---
 title: Karan Srivastava
-role: "PhD Student, Mathematics "
+role: PhD Student, Mathematics
 avatar_filename: avatar.png
 bio: My research interests include algebraic geometry, number theory, and
   machine learning
