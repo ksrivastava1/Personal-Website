@@ -16,9 +16,15 @@ main:
   - name: Publications
     url: '#publications'
     weight: 50
+  - name: Organizations
+    url: '#organizations'
+    weight: 60
+  - name: Teaching
+    url: '#teaching'
+    weight: 70
   - name: Contact
     url: '#contact'
-    weight: 60
+    weight: 80
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

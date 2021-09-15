@@ -1,7 +1,7 @@
 ---
 title: Using varieties to study polynomial neural networks
 abstract: "In this talk, I will explore the work of Kileel, Trager, and Bruna in
-  their 2019 paper 'On the Expressive power of Polynomial Neural Networks'. In
+  their 2019 paper [On the Expressive power of Polynomial Neural Networks](https://arxiv.org/abs/1905.12207). In
   the talk, I will look at 1) what a polynomial neural network is and how we can
   interpret the output such networks as varieties, 2) why the dimension of this
   variety and the expressive power of this network are related, and 3) how the

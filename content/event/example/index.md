@@ -9,7 +9,7 @@ abstract: "The process for solving rubiks cubes can often involve memorizing
 slides: ""
 url_pdf: ""
 summary: AMS Student Chapter Seminar, Madison, WI
-title: "Applying group theory to solve rubiks cubes "
+title: "Applying group theory to solve rubiks cubes"
 location: |-
   UW Madison Math Dept,
   Van Vleck 901
@@ -37,3 +37,5 @@ image:
   focal_point: Right
 url_code: ""
 ---
+
+{{% staticref "uploads/Chess.pdf" %}} Check out the write up {{% /staticref %}}

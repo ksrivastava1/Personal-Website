@@ -30,7 +30,7 @@ experience:
     date_start: '2020-08-15'
     date_end: ''
     description: |2-
-        I am currently interested in problems in algebraic geometry and machine learning. I am curious about how machine learning can be used in algebraic geometry and number theory to inform conjectures and guide research; I am also interested in thinking about how tools from algebraic geometry can be used to solve problems in machine learning and data completion. I am also doing a graduate minor in Computer Science. 
+        I am currently interested in problems in algebraic geometry and machine learning. I am curious about how machine learning can be used in algebraic geometry and number theory to inform conjectures and guide research; I am also interested in thinking about how tools from algebraic geometry can be used to solve problems in machine learning and data completion. I am doing a graduate minor in Computer Science. 
         
   - title: BSc in Mathematics
     company: University of Illinois at Urbana-Champaign
