@@ -34,8 +34,6 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-I'm a second year PhD student in mathematics. I'm broadly interested in algebraic geometry and machine learning. Some questions I'm currently pondering include how machine learning can be used as a tool to aid mathematicians, how algebraic varieties can be used to approximate data, and what connections can we find between algebraic geometry and machine learning.
-
-
+I'm a second year PhD student in mathematics. I'm broadly interested in algebraic geometry and machine learning. Some questions I'm currently pondering include how machine learning can be used as a tool to aid mathematicians, how algebraic varieties can be used to approximate data, and what connections can we find between algebraic geometry and machine learning. I'm affiliated with the [Wisconsin Institute for Discovery](https://wid.wisc.edu/). 
 
 I was born in Kolkata, India - a city rich in history and culture with bustling streets and great food - and lived there until I moved to the calmer lands of Illinois, where I got my BSc in Mathematics at the [University of Illinois at Urbana-Champaign](https://illinois.edu/). I also spent a semester at the [Independent University of Moscow](https://ium.mccme.ru/english/) as a part of the [Math in Moscow](https://mathinmoscow.org/) study abroad program.
