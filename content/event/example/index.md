@@ -1,14 +1,14 @@
 ---
-abstract: "'Given a chessboard with a coin on every square randomly oriented and a key hidden under one of them; player one knows where the key is and flips a single coin; player 2, using only the information of the new coin arrangement must determine where the coin is. Is there a winning strategy?' In this talk, we will explore this classic puzzle in a more generalized context, with n squares and d sided dice on every square, and see when the game is solvable and in doing so, see how the answer relies on group theory and the existence of specific classes of groups!"
+abstract: "'Given a chessboard with a coin on every square randomly oriented and a key hidden under one of them; player one knows where the key is and flips a single coin; player 2, using only the information of the new coin arrangement must determine where the coin is. Is there a winning strategy?' In this talk, we will explore this classic puzzle in a more generalized context, with n squares and d sided dice on every square, and see when the game is solvable and in doing so, see how the answer relies on group theory and the existence of certain groups!"
 slides: ""
 url_pdf: ""
 summary: AMS Student Chapter Seminar, Madison, WI
-title: "Applying group theory to a classic 'almost impossible' puzzle"
+title: "A classic 'almost impossible' puzzle and group theory"
 location: |-
   UW Madison Math Dept,
   Van Vleck 911
-date: 2021-09-30T13:00:00.000Z
-date_end: 2021-09-30T15:00:00.000Z
+date: 2021-10-06T15:30:00.000Z
+date_end: 2021-10-06T16:30:00.000Z
 all_day: false
 event: AMS Student Chapter Seminar
 event_url: https://hilbert.math.wisc.edu/wiki/index.php/AMS_Student_Chapter_Seminar
