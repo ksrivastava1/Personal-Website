@@ -1,5 +1,5 @@
 ---
-abstract: "'Given a chessboard with a coin on every square randomly oriented and a key hidden under one of them; player one knows where the key is and flips a single coin; player 2, using only the information of the new coin arrangement must determine where the coin is. Is there a winning strategy?' In this talk, we will explore this classic puzzle in a more generalized context, with n squares and d sided dice on every square, and see when the game is solvable and in doing so, see how the answer relies on group theory and the existence of certain groups!"
+abstract: "'Given a chessboard with a coin on every square randomly oriented and a key hidden under one of them; player one knows where the key is and flips a single coin; player 2, using only the information of the new coin arrangement must determine where the key is. Is there a winning strategy?' In this talk, we will explore this classic puzzle in a more generalized context, with n squares and d sided dice on every square, and see when the game is solvable and in doing so, see how the answer relies on group theory and the existence of certain groups!"
 slides: ""
 url_pdf: ""
 summary: AMS Student Chapter Seminar, Madison, WI
