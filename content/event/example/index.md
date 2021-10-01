@@ -3,7 +3,7 @@ abstract: "'Given a chessboard with a coin on every square randomly oriented and
 slides: ""
 url_pdf: ""
 summary: AMS Student Chapter Seminar, Madison, WI
-title: "A classic 'almost impossible' puzzle and group theory"
+title: "An 'almost impossible' puzzle and group theory"
 location: |-
   UW Madison Math Dept,
   Van Vleck 911
