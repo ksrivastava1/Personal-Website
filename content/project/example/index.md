@@ -14,4 +14,6 @@ image:
   focal_point: Smart
 url_code: ""
 ---
-I'm currently working with [Daniel Pimentel-Alarćon](https://danielpimentel.github.io/) on a project on approximating incomplete data with varieties.
+I'm currently working with [Daniel Pimentel-Alarćon](https://danielpimentel.github.io/) on a project on approximating incomplete data with varieties. See [github](https://github.com/ksrivastava1/identifying-subspaces) for some code.
+
+Updates coming soon!
