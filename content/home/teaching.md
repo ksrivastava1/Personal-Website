@@ -39,6 +39,7 @@ I love teaching! Here are the classes that I've taught as a teaching assistant:
 Math 221 - Calculus and Analytic Geometry 1 - Fall 2020 <br />
 Math 211 - Calculus - Spring 2021, Fall 2021 <br />
 Math 222 - Calculus and Analytic Geometry 2 - Summer 2021 <br />
+Math 240 - Intro to Discrete Mathematics - Summer 2022 <br />
 
 [Here](https://drive.google.com/drive/folders/1yZDApx2IGUdx22IEwBN_89BeHt56w67_?usp=sharing) are worksheets that I've written.
 

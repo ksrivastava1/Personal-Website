@@ -14,6 +14,4 @@ image:
   focal_point: Smart
 url_code: ""
 ---
-I'm currently working with [Daniel Pimentel-Alarćon](https://danielpimentel.github.io/) on a project on approximating incomplete data with varieties. See [github](https://github.com/ksrivastava1/identifying-subspaces) for some code.
-
-Updates coming soon!
+I'm currently working with [Daniel Pimentel-Alarćon](https://danielpimentel.github.io/) on a project on approximating incomplete data with varieties. Our recent work has been to derive a perturbation bound for the optimal subspace estimator from canonical projections. See [github](https://github.com/ksrivastava1/identifying-subspaces) for some code. You can see the paper in my publications section and slides in my talks section!

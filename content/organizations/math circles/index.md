@@ -2,7 +2,8 @@
 title: Math Circle
 summary: UW - Madison, Madison, WI
 tags:
-date: "2021-09-08"
+date: "2021-08-30"
+
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

@@ -32,4 +32,4 @@ image:
 url_code: ""
 ---
 
-Check out {{% staticref "uploads/Chess.pdf" %}} my write up {{% /staticref %}} for the problem! 
+Check out {{% staticref "files/Chess.pdf" %}} my write up {{% /staticref %}} for the problem! 
