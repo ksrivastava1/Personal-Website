@@ -21,4 +21,4 @@ image:
 
 This paper derives a perturbation bound on the optimal subspace estimator obtained from a subset of its canonical projections contaminated by noise. This fundamental result has important implications in matrix completion, subspace clustering, and related problems.
 
-Slides coming soon!
+You can find my ISIT 22 presentation slides on this paper {{% staticref "files/isit_final_slides.pdf" %}} here {{% /staticref %}}.
