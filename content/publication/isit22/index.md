@@ -4,7 +4,7 @@ authors:
 - admin
 - Daniel Pimentel-Alarcón
 date: "2022-06-26T00:00:00Z"
-doi: ""
+doi: "10.1109/ISIT50566.2022.9834816"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
