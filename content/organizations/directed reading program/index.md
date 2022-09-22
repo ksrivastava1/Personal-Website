@@ -17,13 +17,13 @@ url_video: ""
 
 ---
 
-I'm helping organize the directed reading program! This is a mentorship program that pairs undergraduates with graduate mentors for a semester long reading group. It's a great way for undergraduate students to get a taste of some interesting forms of mathematics outside the classroom. You can find more information [here](https://hilbert.math.wisc.edu/~drp/) about the program. I really recommend this to both graduate and undergraduate students!
+I help run the directed reading program! This is a mentorship program that pairs undergraduates with graduate mentors for a semester long reading project in areas of Math and CS that you might not see in your courses. It's a great way for undergraduate students to get a taste of some interesting forms of mathematics with small groups of like-minded and motivated students under graduate student mentors who specialize in these areas. For graduate students, it's a way for you to share the fields of study that you love with young scholars and get valuable mentorship experience. You can find more information [here](https://hilbert.math.wisc.edu/~drp/) about the program. I really recommend this to both graduate and undergraduate students!
 
 If you have any questions about this, don't hesitate to get in touch!
 
 -----------------------
 
-Here are some projects / project ideas that I am interested in:
+Here are some projects that I have done:
 
 Fall 2021
 
@@ -33,7 +33,9 @@ Description: In this project, we will survey three core mathematical ideas that 
 
 Prerequisites: Students should be comfortable with linear algebra and calc 3. No coding background required - if we get to coding parts of the project, the required python can be picked up along the way. 
 
-Possible Future Ideas
+Post-project notes: The project went great! We went through the first half of the book and we ended up using keras to code some basic neural networks that learnt how to graph polynomial functions. My students made a cool {{% staticref "files/DRP_fall_2021_slides.pdf" %}} presentation {{% /staticref %}} at the end of the project.
+
+Spring 2022
 
 1) Title: An introduction to algebraic curves
 
@@ -41,8 +43,10 @@ Description: Algebraic geometry (AG) is the study of geometric objects using the
 
 Prerequisites: You should be familiar with some ring theory.
 
+Post-project notes: This was a lot of fun! Everyone did a really great job keeping up with the book and side readings! 
+
 ------------------------
 
-These are just some project ideas. If you have some ideas you would like me to mentor, send me an email with your project idea! It doesn't need to be specific - I look forward to hearing about whatever you have in mind!
+If you have some ideas you would like me to mentor, send me an email with your project idea! It doesn't need to be specific - I look forward to hearing about whatever you have in mind!
 
 
