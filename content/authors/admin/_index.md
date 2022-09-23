@@ -19,6 +19,12 @@ social:
     icon_pack: ai
     icon: cv
     link: "files/CV.pdf" 
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/ksrivastava1/
+  - icon: graduation-cap
+    icon_pack: fas
+    link: https://scholar.google.com/citations?user=Xrh87H8AAAAJ&hl=en&oi=sra
 organizations:
   - name: University of Wisconsin-Madison
     url: https://www.wisc.edu/
@@ -39,3 +45,5 @@ I'm a third year PhD student in mathematics. I'm broadly interested in [algebrai
 Currently, my research focusses on studying incomplete data through the lens of algebraic geometry. Some other questions I ponder include how machine learning can be used as a tool to aid mathematicians, how pure math and algebra can be used to create new methods of data completion, and what connections can we find between algebraic geometry and machine learning. I'm always on the lookout for interesting questions to work on and am interested in exploring questions in these fields. I'm also affiliated with the [Wisconsin Institute for Discovery](https://wid.wisc.edu/)
 
 I was born in Kolkata, India - a city rich in history and culture with bustling streets and great food - and lived there until I moved to the calmer lands of Illinois, where I got my BSc in Mathematics at the [University of Illinois at Urbana-Champaign](https://illinois.edu/). I also spent a semester at the [Independent University of Moscow](https://ium.mccme.ru/english/) as a part of the [Math in Moscow](https://mathinmoscow.org/) study abroad program.
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
