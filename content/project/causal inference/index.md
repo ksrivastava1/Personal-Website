@@ -62,6 +62,6 @@ In ML, we're usually trying to understand the distribution P(y|x), i.e. given th
 <math>$$P(X=x | Y = 0) = \begin{cases} 1 & \text{if }x=0 \newline 0 & \text{if }x=1\end{cases}$$</math>
 <math>$$P(Y=y | X = 0) = \begin{cases} \frac{1}{3} & \text{if }y=0 \newline \frac{2}{3} & \text{if }y=1 \newline 0 & \text{if }y=2\end{cases}$$</math>
 
-Notice that the distribution for <math>$P(X|Y)$</math> does not change but the distribution for <math>$P(Y|X)$</math> does. This is a two-variable example to show the assymetry in causal vs anticausal problems and why certain machine learning algorithms might learn <math>$P(Y|X)$</math> differently in these cases. My immediate next steps are to study this problem in three variables and study the datasets from the work of Scholköpf et al. to look into this phenomenon. 
+Notice that the distribution for <math> $ P(X|Y)$ </math> does not change but the distribution for <math> $ P(Y|X)$ </math> does. This is a two-variable example to show the assymetry in causal vs anticausal problems and why certain machine learning algorithms might learn  <math> $ P(Y|X)$</math> differently in these cases. My immediate next steps are to study this problem in three variables and study the datasets from the work of Scholköpf et al. to look into this phenomenon. 
 
 --------------------------------
