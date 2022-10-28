@@ -86,7 +86,7 @@ This is a basic <em>structural causal model</em> (SCM) - a model which includes 
 
 It turns out that without any restrictions on the mechanism, the problem of <em>identifying</em> the graph is not feasible. Given variables <math>$X,Y$</math> along with their probability distribution <math>$P(X,Y)$</math>, you can always fit a <em> mechanism </em>   <math> $\varphi$ </math> for either $X \rightarrow Y$ or $Y \rightarrow X$ (the noise variables being understood to be embedded in the graph). This is in the following proposition which states:
 
-<strong>Proposition 1.</strong> Given two random variables <math>$X$ and $Y$</math>, there is a (measurable) function <math>$f$</math> and random variable <math>$N_Y$</math> such that <math>$Y = f(X, N_Y)$</math>
+<strong>Proposition 1.</strong> Given two random variables <math>$X$ and $Y$</math>, there is a (measurable) function <math>$f$</math> and random variable <math> $ N_Y $ </math> such that <math>$Y = f(X, N_Y)$</math>
 
 {{<spoiler text="Click to see proof">}}
 This isn't the main proof of this section, so I'll refer you to [this paper](http://ei.is.mpg.de/uploads_file/attachment/attachment/2/ACM_Zhang14.pdf) by Zhang et al. for a nice proof. See Lemma 1. 
@@ -106,13 +106,13 @@ The first assumption is our main one. Hoyer et al. showed in their [2009 NeurIPS
 
 This equivalent restatement will make the theorem easier to state:
 
-<em><strong>Theorem 1.</strong> Given <math> $ X, N_Y$ , and $Y$ </math> that satisfy an ANM with a function <math>$\phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
+<em><strong>Theorem 1.</strong> Given <math> $ X, N_Y$ , and $Y$ </math> that satisfy an ANM with a function <math> $ \phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
 
 <math>$$ \xi'''  = \xi'' \left( -\frac{\nu''' \phi'}{\nu''} + \frac{\phi''}{\phi'} \right) - 2 \nu '' \phi'' \phi' + \nu' \phi''' + \frac{\nu' \nu''' \phi'' \phi'}{\nu''} - \frac{\nu' (\phi'')^2}{\phi'}$$</math>
 
 where <math>$\nu := \operatorname{log} P_{N_Y}$ and  $\xi := \operatorname{log}P_X$</math>, and we also have that <math>$\nu''(y-\phi(x))\phi'(x) \neq 0$ </math>.
 
-Also, we have that if these conditions hold, then if there is a <math>$y$ for which $\nu''(y-\phi(x))\phi'(x) \neq 0$</math> is true for every <math>$x$</math> aside from a countable set, then the set of all <math>$P_X$</math> which admit a backward model is 3-dimensional (i.e. can be contained in a 3-dimensional affine space).</em>
+Also, we have that if these conditions hold, then if there is a <math>$y$ for which $\nu''(y-\phi(x))\phi'(x) \neq 0$</math> is true for every <math> $ x $ </math> aside from a countable set, then the set of all <math> $ P_X $ </math> which admit a backward model is 3-dimensional (i.e. can be contained in a 3-dimensional affine space).</em>
 
 Of course, here we are assuming that all the relevant functions are thrice differentiable. 
 
