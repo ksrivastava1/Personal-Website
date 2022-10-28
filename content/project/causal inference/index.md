@@ -79,7 +79,7 @@ A basic assumption that we will make is that each variable is affected by (indep
 {{<figure src="causal_graph_1.png" caption="Causal Graph from X to Y" numbered="true">}}
 
 
-This is a basic <em>structural causal model</em> (SCM) - a model which includes a graph with one vertex per variable, jointly independent noise variables, and a deterministic function for each vertex that depends on the vertex's parents and noise. This tells us we have a deterministic mechanism <math>$\varphi$</math> that gives us <math>$Y$ as $Y = \varphi(X, N_Y)$</math>. The question of identifying graphs in <em>causal learning</em> then becomes a question of whether we can ascribe another mechanism from <math>$Y$ to $X$</math> as shown in figure 3. 
+This is a basic <em>structural causal model</em> (SCM) - a model which includes a graph with one vertex per variable, jointly independent noise variables, and a deterministic function for each vertex that depends on the vertex's parents and noise. This tells us we have a deterministic mechanism <math> $\varphi$</math> that gives us <math>$Y$ as $Y = \varphi(X, N_Y)$</math>. The question of identifying graphs in <em>causal learning</em> then becomes a question of whether we can ascribe another mechanism from <math>$Y$ to $X$</math> as shown in figure 3. 
 
 {{<figure src="causal_graph_2.png" caption="Causal Graph from Y to X" numbered="true">}}
 
@@ -94,11 +94,11 @@ This isn't the main proof of this section, so I'll refer you to [this paper](htt
 
 Without any conditions, the indentification problem is not feasible. This should intuitively feel good - without any assumptions, we have no control over how sensitive the mechanism is to the noise and hence the complexity of <math>$P(Y|X)$</math>.
 
-The question thus becomes: Under what conditions can we  We will make the following assumptions:
+The question thus becomes: Under what conditions can we only ascribe one causal mechanism between the two variables and not the other (i.e. identify the causal graphs). One possibility is that we make add some structure of the model. So, in our work, we will make the following assumptions. The first will be an assumption about our model and the second will be general SCM assumptions:
 
 1. The mechanism is an <em><strong>Additive Noise Model</strong></em> (ANM), i.e. <math>$\varphi (X, N_Y) = \phi(X) + N_Y$</math> for some function <mathb>$\phi$, where $N_Y$ and X </math> are independent. 
 
-2. The usual assumptions of SCMs also hold, such as the independence of the mechanism and input (<math>$P(Y | X)$ and $X$</math>), Markov compatibility (<math>$P(Y)$ just depends on it's parent $X$ - which is trivial in our case</math>), and causal sufficiency. 
+2. The usual assumptions of SCMs also hold: the independence of the mechanism and input (<math>$P(Y | X)$ and $X$</math>), Markov compatibility (<math>$P(Y)$ just depends on it's parent $X$ - which is trivial in our case</math>), and causal sufficiency. 
 
 The first assumption is our main one. Hoyer et al. showed in their [2009 NeurIPS paper](https://papers.nips.cc/paper/2008/file/f7664060cc52bc6f3d620bcedc94a4b6-Paper.pdf) that under the ANM assumption, we can recover the causal mechanism in most cases. Before we state the main theorem, it is worth noting that since <math>$X$ and $N_Y$</math> are independent, th joint distribution <math>$P(X,Y)$</math> can be rewritten as
 
@@ -117,7 +117,7 @@ Also, we have that if these conditions hold, then if there is a <math>$y$ for wh
 Of course, here we are assuming that all the relevant functions are thrice differentiable. 
 
 {{<spoiler text="Click here if you're interested in the proof">}}
-  You can find my write up and notes on the proof {{% staticref "files/Proof_of_Theorem.pdf" %}} here {{% /staticref %}}
+  You can find my write up and notes on the proof {{% staticref "files/Proof_of_Theorem.pdf" %}} here {{% /staticref %}}. The general idea of the proof is that just as we can factor the joint distribution <math>$P_{X,Y}$</math> into a product of distributions <math>$P_X \cdot P_{N_Y}$</math>, if a backword model exists, we could similarly factor it into <math>$P_Y \cdot P_{N_X}$</math>. Taking second order partial derivatives of (the logs of) both of these factorizations give different expressions which we set to be equal since they're the derivatives of the same distribution. Setting the derivatives equal and rearranging terms gives us part one. Part two follows from the theory of linear differential equations. 
 {{</spoiler>}}
 
 The differential equation seems quite arbitrary, but let's understand at a high level what this tells us. The differential equation is of order 3 (since the highest derivative taken is a third derivative). We can also see that it is linear in <math>$\xi$</math>; that is, it can be written as 
