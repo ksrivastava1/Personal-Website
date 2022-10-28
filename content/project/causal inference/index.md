@@ -84,7 +84,7 @@ This is a basic <em>structural causal model</em> (SCM) - a model which includes 
 {{<figure src="causal_graph_2.png" caption="Causal Graph from Y to X" numbered="true">}}
 
 
-It turns out that without any restrictions on the mechanism, the problem of <em>identifying</em> the graph is not feasible. Given variables <math>$X,Y$</math> along with their probability distribution <math>$P(X,Y)$</math>, you can always fit a <em>mechanism</em> <math>$\varphi$</math> for either $X \rightarrow Y$ or $Y \rightarrow X$ (the noise variables being understood to be embedded in the graph). This is in the following proposition which states:
+It turns out that without any restrictions on the mechanism, the problem of <em>identifying</em> the graph is not feasible. Given variables <math>$X,Y$</math> along with their probability distribution <math>$P(X,Y)$</math>, you can always fit a <em> mechanism </em>   <math> $\varphi$ </math> for either $X \rightarrow Y$ or $Y \rightarrow X$ (the noise variables being understood to be embedded in the graph). This is in the following proposition which states:
 
 <strong>Proposition 1.</strong> Given two random variables <math>$X$ and $Y$</math>, there is a (measurable) function <math>$f$</math> and random variable <math>$N_Y$</math> such that <math>$Y = f(X, N_Y)$</math>
 
@@ -96,17 +96,17 @@ Without any conditions, the indentification problem is not feasible. This should
 
 The question thus becomes: Under what conditions can we only ascribe one causal mechanism between the two variables and not the other (i.e. identify the causal graphs). One possibility is that we make add some structure of the model. So, in our work, we will make the following assumptions. The first will be an assumption about our model and the second will be general SCM assumptions:
 
-1. The mechanism is an <em><strong>Additive Noise Model</strong></em> (ANM), i.e. <math>$\varphi (X, N_Y) = \phi(X) + N_Y$</math> for some function <mathb>$\phi$, where $N_Y$ and X </math> are independent. 
+1. The mechanism is an <em><strong>Additive Noise Model</strong></em> (ANM), i.e. <math>$$\varphi (X, N_Y) = \phi(X) + N_Y$$</math> for some function <mathb>$\phi$, where $N_Y$ and X </math> are independent. 
 
 2. The usual assumptions of SCMs also hold: the independence of the mechanism and input (<math>$P(Y | X)$ and $X$</math>), Markov compatibility (<math>$P(Y)$ just depends on it's parent $X$ - which is trivial in our case</math>), and causal sufficiency. 
 
-The first assumption is our main one. Hoyer et al. showed in their [2009 NeurIPS paper](https://papers.nips.cc/paper/2008/file/f7664060cc52bc6f3d620bcedc94a4b6-Paper.pdf) that under the ANM assumption, we can recover the causal mechanism in most cases. Before we state the main theorem, it is worth noting that since <math>$X$ and $N_Y$</math> are independent, th joint distribution <math>$P(X,Y)$</math> can be rewritten as
+The first assumption is our main one. Hoyer et al. showed in their [2009 NeurIPS paper](https://papers.nips.cc/paper/2008/file/f7664060cc52bc6f3d620bcedc94a4b6-Paper.pdf) that under the ANM assumption, we can recover the causal mechanism in most cases. Before we state the main theorem, it is worth noting that since <math>$X$ and $N_Y$</math> are independent, the joint distribution <math> $ P(X,Y) $ </math> can be rewritten as
 
 <math>$$ P(X = x, Y = y) = P(X = x, N_y = y - \phi(x))$$ $$= P_{X}(X = x) \cdot P_{N_Y}(N_Y = y - \phi(x)) $$</math>
 
 This equivalent restatement will make the theorem easier to state:
 
-<em><strong>Theorem 1.</strong> Given <math>$X, N_Y$, and $Y$</math> that satisfy an ANM with a function <math>$\phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
+<em><strong>Theorem 1.</strong> Given <math> $ X, N_Y$ , and $Y$ </math> that satisfy an ANM with a function <math>$\phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
 
 <math>$$ \xi'''  = \xi'' \left( -\frac{\nu''' \phi'}{\nu''} + \frac{\phi''}{\phi'} \right) - 2 \nu '' \phi'' \phi' + \nu' \phi''' + \frac{\nu' \nu''' \phi'' \phi'}{\nu''} - \frac{\nu' (\phi'')^2}{\phi'}$$</math>
 
@@ -117,16 +117,16 @@ Also, we have that if these conditions hold, then if there is a <math>$y$ for wh
 Of course, here we are assuming that all the relevant functions are thrice differentiable. 
 
 {{<spoiler text="Click here if you're interested in the proof">}}
-  You can find my write up and notes on the proof {{% staticref "files/Proof_of_Theorem.pdf" %}} here {{% /staticref %}}. The general idea of the proof is that just as we can factor the joint distribution <math>$P_{X,Y}$</math> into a product of distributions <math>$P_X \cdot P_{N_Y}$</math>, if a backword model exists, we could similarly factor it into <math>$P_Y \cdot P_{N_X}$</math>. Taking second order partial derivatives of (the logs of) both of these factorizations give different expressions which we set to be equal since they're the derivatives of the same distribution. Setting the derivatives equal and rearranging terms gives us part one. Part two follows from the theory of linear differential equations. 
+  You can find my write up and notes on the proof {{% staticref "files/Proof_of_Theorem.pdf" %}} here {{% /staticref %}}. The general idea of the proof is that just as we can factor the joint distribution <math> $P_{X,Y}$ </math> into a product of distributions <math>$P_X \cdot P_{N_Y}$</math>, if a backword model exists, we could similarly factor it into <math>$P_Y \cdot P_{N_X}$</math>. Taking second order partial derivatives of (the logs of) both of these factorizations give different expressions which we set to be equal since they're the derivatives of the same distribution. Setting the derivatives equal and rearranging terms gives us part one. Part two follows from the theory of linear differential equations. 
 {{</spoiler>}}
 
 The differential equation seems quite arbitrary, but let's understand at a high level what this tells us. The differential equation is of order 3 (since the highest derivative taken is a third derivative). We can also see that it is linear in <math>$\xi$</math>; that is, it can be written as 
 
 <math>$$a_0 + a_2 \xi'' + a_3 \xi ''' = b(x,y)$$</math>
 
-and the solution space must be 3-dimensional (see proof for details). Given that the dimension of the space of <em>every possible</em> solution <math>$\xi$</math> is infinite dimensional, this tells us that almost every ANM <math>$\varphi$</math> does not admit a backwards model since most <math>$\phi, P_X, P_{N_Y}$</math> don't satisfy the above differential equation. 
+and the solution space must be 3-dimensional (see proof for details). Given that the dimension of the space of <em>every possible</em> solution <math>$\xi$</math> is infinite dimensional, this tells us that almost every ANM <math>$\varphi$</math> does not admit a backwards model since most <math> $ \phi, P_X, P_{N_Y} $ </math> don't satisfy the above differential equation. 
 
-On a side note, a fun corollary of this theorem is that if <math>$\xi''' = \nu''' = 0$</math> everywhere, then the only <math>$\phi$ for which a backward model exists is for linear $\phi$</math>. This tells us that, for example, in the case where <math>$P_X$ and $P_{N_Y}$</math> are Gaussian, only linear <math>$\phi$</math> admit backward models. 
+On a side note, a fun corollary of this theorem is that if  <math> $ \xi''' = \nu''' = 0$</math> everywhere, then the only <math>$\phi$ for which a backward model exists is for linear $\phi$</math>. This tells us that, for example, in the case where <math> $ P_X$ and $P_{N_Y}$</math> are Gaussian, only linear <math>$\phi$</math> admit backward models. 
 
 {{<spoiler text="Click here if you're interested in the proof">}}
 This proof follows pretty much exactly as in the Hoyer paper, but if you'd like to see it, you can find my write up and notes {{% staticref "files/Proof_of_Corollary.pdf" %}} here {{% /staticref %}} 
