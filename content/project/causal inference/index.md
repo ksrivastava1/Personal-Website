@@ -72,7 +72,7 @@ Notice that the distribution for <math> $ P(X|Y)$ </math> does not change but th
 
 <strong>Identifiability</strong>
 
-To understand this phenomenon better, first, let's focus on the data and go back to our original motivation: discovering causal structure and finding the causal relationships between different variables. Given features <math>X</math> and labels <math>Y</math>, can we distinguish between the causal directions <math>$X \rightarrow Y$</math> and <math>$Y \rightarrow X$</math>? That is to say, can we ascribe a deterministic <em>mechanism</em> <math> $X \xrightarrow{\varphi} Y$ as apposed to $X \xrightarrow{\varphi} Y$ </math>. 
+To understand this phenomenon better, first, let's focus on the data and go back to our original motivation: discovering causal structure and finding the causal relationships between different variables. Given features <math>X</math> and labels <math>Y</math>, can we distinguish between the causal directions <math>$X \rightarrow Y$</math> and <math>$Y \rightarrow X$</math>? That is to say, can we ascribe a deterministic <em>mechanism</em> <math> $X \xrightarrow{\varphi} Y$ as apposed to $Y \xrightarrow{\psi} X$ </math>. 
 
 A basic assumption that we will make is that each variable is affected by (independent) noise variables <math>$N_Y$ (and $N_X$ for the reverse causal structure)</math>. So, the model we will work with is the graph in figure 2. 
 
