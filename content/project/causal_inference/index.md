@@ -191,7 +191,7 @@ After running the same experiments as in experiment 1, we get the following regr
 
 
 
-The HSIC score for the testing data for the forward model <math> $X \rightarrow Y$ </math> was <math>$0.6$</math> with the threshold being <math> $ 0.3 $ </math>. So the forward model was rejected. The HSIC score for the reverse model <math> $Y \rightarrow X$ </math> was <math> $ 0.2 $ </math> with a similar threshold and so the reverse model was accepted. Thus we have seen that this is a case of anticausal learning and, in fact, it's the age of the snail that causes the length of the shell and not the other way around. 
+The HSIC score for the testing data for the forward model <math> $X \rightarrow Y$ </math> was <math>$0.6$</math> with the threshold being <math> $ 0.3$</math>. So the forward model was rejected. The HSIC score for the reverse model <math> $Y \rightarrow X$ </math> was <math> $ 0.2 $ </math> with a similar threshold and so the reverse model was accepted. Thus we have seen that this is a case of anticausal learning and, in fact, it's the age of the snail that causes the length of the shell and not the other way around. 
 
 These are simple examples that serve as evidence to the interesting claim that one can use machine learning techniques to find causal relationships in data. This method does generalize to higher numbers of variables and so in future sections, we'll see some more interesting examples of this. Stay tuned!
 
