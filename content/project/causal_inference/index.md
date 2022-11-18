@@ -165,11 +165,11 @@ We sample <math>$X$ and $N$</math> from a standard normal Gaussian distribution 
 
 {{<figure src="experiment_1.png" caption="Probability of acceptance vs varying values of b with fixed q = 1" numbered="true">}}
 
-For <math>$q=1$</math>, we take 100 values of <math>$b$</math> between <math>$-1$</math> and <math>$1$</math> and took the average of 50 experiments in each case. Figure 4 shows the probability of the forward and reverse models being accepted. As we would expect, the probability of the reverse model being accepted is significant only around <math> $b=0$ </math> where the model is linear and essentially <math>$0$</math> otherwise, whereas the forward (correct) model is usually accepted. 
+For <math>$q=1$</math>, we take 100 values of <math>$b$</math> between <math>$-1$</math> and <math>$1$</math> and took the average of 50 experiments in each case. Figure 4 shows the probability of the forward and reverse models being accepted. As we would expect, the probability of the reverse model being accepted is significant only around <math> $b=0$ </math> where the model is linear and essentially <math> $ 0 $ </math> otherwise, whereas the forward (correct) model is usually accepted. 
 
 {{<figure src="experiment_2.png" caption="Probability of acceptance vs varying values of q with fixed b = 0" numbered="true">}}
 
-For <math>$b=0$</math>, i.e. the linear case, we similarly take 100 values of <math>$q$</math> between <math>$0.5$ and $2$</math> and plot the average of 50 experiments per value of <math>$q$</math> in figure 5. The reverse model is accepted around <math>$q=1$</math> as seen before and rejected for the super-Gaussian and sub-Gaussian cases. So the model can solve the linear sub-Gaussian and super-Gaussian cases. 
+For <math>$b=0$</math>, i.e. the linear case, we similarly take 100 values of <math>$q$</math> between <math> $ 0.5 $ and $ 2 $ </math> and plot the average of 50 experiments per value of <math>$q$</math> in figure 5. The reverse model is accepted around <math> $ q=1 $ </math> as seen before and rejected for the super-Gaussian and sub-Gaussian cases. So the model can solve the linear sub-Gaussian and super-Gaussian cases. 
  
 
 <strong><em>Experiment 2 - Real Data</em></strong>
@@ -191,7 +191,7 @@ After running the same experiments as in experiment 1, we get the following regr
 
 
 
-The HSIC score for the testing data for the forward model <math> $X \rightarrow Y$ </math> was <math>$0.6$</math> with the threshold being <math> $0.3$ </math>. So the forward model was rejected. The HSIC score for the reverse model <math> $Y \rightarrow X$ </math> was <math>$0.2$</math> with a similar threshold and so the reverse model was accepted. Thus we have seen that this is a case of anticausal learning and, in fact, it's the age of the snail that causes the length of the shell and not the other way around. 
+The HSIC score for the testing data for the forward model <math> $X \rightarrow Y$ </math> was <math>$0.6$</math> with the threshold being <math> $ 0.3 $ </math>. So the forward model was rejected. The HSIC score for the reverse model <math> $Y \rightarrow X$ </math> was <math> $ 0.2 $ </math> with a similar threshold and so the reverse model was accepted. Thus we have seen that this is a case of anticausal learning and, in fact, it's the age of the snail that causes the length of the shell and not the other way around. 
 
 These are simple examples that serve as evidence to the interesting claim that one can use machine learning techniques to find causal relationships in data. This method does generalize to higher numbers of variables and so in future sections, we'll see some more interesting examples of this. Stay tuned!
 
