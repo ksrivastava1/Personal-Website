@@ -132,7 +132,7 @@ On a side note, a fun corollary of this theorem is that if  <math> $ \xi''' = \n
 This proof follows pretty much exactly as in the Hoyer paper, but if you'd like to see it, you can find my write up and notes {{% staticref "files/Proof_of_Corollary.pdf" %}} here {{% /staticref %}} 
 {{</spoiler>}}
 
-What this tells us about the identification problem is that if given variables <math>$X,Y$</math>, if we can fit an ANM <math>$\varphi : X \rightarrow Y$</math>, then with probability 1, we can assume that the causal relationship is <math>$X \rightarrow Y$</math>. In the next section (to come), we'll include some experiments to show how we can use this theoretical results in some practical cases with both with real data and synthetic examples. Then, we'll move to studying the SSL problem under these conditions.
+What this tells us about the identification problem is that if given variables <math>$X,Y$</math>, if we can fit an ANM <math>$\varphi : X \rightarrow Y$</math>, then with probability 1, we can assume that the causal relationship is <math>$X \rightarrow Y$</math>. In the next section, we'll include some experiments to show how we can use this theoretical results in some practical cases with both with real data and synthetic examples. Then, we'll move to studying the SSL problem under these conditions.
 
 For some further reading for anyone interested, Zhang and Hyvärinen showed in their [2010 AUI paper](https://arxiv.org/pdf/1205.2599.pdf) similar results for postlinear ANM models, which apply a further nonlinear transformation to the ANM we used. The proof techniques used there are quite similar to the proof technique used here!
 
