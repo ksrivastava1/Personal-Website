@@ -210,7 +210,7 @@ The key experiment here involves some synthetic data again. We start by defining
 
 where <math>$N_X, N_Y, N_Z \overset{\mathrm{iid}}{\sim} Unif(-1,1)$</math>. Clearly, the DAG that we're working with is the following one in figure 10.
 
-*INCLUDE COOL DAG*
+{{<figure src="four_part_dag.png" caption="Causal graph for four variable experiment" numbered="true">}}
 
 Using the exact same method as in experiment 1, we run through every possible combination of causal directions between each pair of variables (cycling through each dag) and we get that the correct causal graph is accepted 78% of the time (in 1000 random experiments) while the incorrect ones are rejected. The problem with this method in real applications, however, is that as the number of variables <math> $ n $ </math> increases, the number of possible causal graphs is super-exponential in <math> $ n $ </math>. So such methods become quickly unfeasible. In practice, one needs to combine this method with standard conditional independence analyses to d-separate variables and find possible DAGs. Such methods are best used, in my opinion, to either statistically verify whether graphs are correct and help seive through contending options for the graph to test which are infeasible. 
 
