@@ -106,7 +106,7 @@ The first assumption is our main one. Hoyer et al. showed in their [2009 NeurIPS
 
 This equivalent restatement will make the theorem easier to state:
 
-<em><strong>Theorem 1.</strong> Given <math> $ X, N_Y$ , and $Y$ </math> that satisfy an ANM with a function <math> $ \phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
+<em><strong>Theorem 1.</strong></em> Given <math> $ X, N_Y$ , and $Y$ </math> that satisfy an ANM with a function <math> $ \phi$</math>, if there is a backward mechanism of the same form, then $\phi, P_X, P_{N_Y}$ must satisfy the following differential equation:
 
 <math>$$ \xi'''  = \xi'' \left( -\frac{\nu''' \phi'}{\nu''} + \frac{\phi''}{\phi'} \right) - 2 \nu '' \phi'' \phi' + \nu' \phi''' + \frac{\nu' \nu''' \phi'' \phi'}{\nu''} - \frac{\nu' (\phi'')^2}{\phi'}$$</math>
 
@@ -193,6 +193,50 @@ After running the same experiments as in experiment 1, we get the following regr
 
 The HSIC score for the testing data for the forward model <math> $X \rightarrow Y$ </math> was <math>$0.6$</math> with the threshold being <math> $ 0.3$</math>. So the forward model was rejected. The HSIC score for the reverse model <math> $Y \rightarrow X$ </math> was <math> $ 0.2 $ </math> with a similar threshold and so the reverse model was accepted. Thus we have seen that this is a case of anticausal learning and, in fact, it's the age of the snail that causes the length of the shell and not the other way around. 
 
-These are simple examples that serve as evidence to the interesting claim that one can use machine learning techniques to find causal relationships in data. This method does generalize to higher numbers of variables and so in future sections, we'll see some more interesting examples of this. Stay tuned!
+These are simple examples that serve as evidence to the interesting claim that one can use machine learning techniques to find causal relationships in data.
 
+--------------------------------
+
+<strong> More complex examples and what can go wrong</strong>
+
+Where do we go from here. A first question one might have is that does this method work for more than two variables? Well, yes - but with a caveat. 
+
+The key experiment here involves some synthetic data again. We start by defining the following random variables 
+
+<math>$$W \sim Unif(-5,5)$$</math>
+<math>$$ X = \frac{W^3}{10} + N_X$$</math>
+<math>$$ Y = \cos(W) + N_Y$$</math>
+<math>$$ Z = \ln{\sqrt{|X|+1}} + \cos(Y) + N_Z$$</math>
+
+where <math>$N_X, N_Y, N_Z \overset{\mathrm{iid}}{\sim} Unif(-1,1)$</math>. Clearly, the DAG that we're working with is the following one in figure 10.
+
+*INCLUDE COOL DAG*
+
+Using the exact same method as in experiment 1, we run through every possible combination of causal directions between each pair of variables (cycling through each dag) and we get that the correct causal graph is accepted 78% of the time (in 1000 random experiments) while the incorrect ones are rejected. The problem with this method in real applications, however, is that as the number of variables <math> $ n $ </math> increases, the number of possible causal graphs is super-exponential in <math> $ n $ </math>. So such methods become quickly unfeasible. In practice, one needs to combine this method with standard conditional independence analyses to d-separate variables and find possible DAGs. Such methods are best used, in my opinion, to either statistically verify whether graphs are correct and help seive through contending options for the graph to test which are infeasible. 
+
+Another critique, of course, is that this would, like any other machine learning problem, require to find a nonlinear regression that works well. In the above examples, we used a support vector regression with a radial bias kernel. If we rerun the abalone experiment from before with a polynomial kernel instead, we get the predictions and residuals as shown in figure 11 below. 
+
+{{<figure src="abalone_forward_wrong.png" caption="SVR regression of length onto age with polynomial kernel" numbered="true">}}
+
+Running the same HSIC test results in a rejection of both causal models with a much courser threshhold (due to the course estimations). This does not mean that there is no causal relationship (since we know age does cause length), it's that we couldn't detect one. Remember, the theorem from before guaranteed that if we fit a model in one direction, then it's the right direction in almost every universe. But nothing is said if we can't find a model in one direction in the first place. Therefore, choosing the right regression models is key - for which there is no general answer and any answer will be domain-specific. However, nonlinear regression is widely used with a lot of success, so there is strong reason to believe that this method is still worthy.
+
+Finally, the examples here shown are for additive noise models. This is a restrictive assumption. Within the field of causal learning in ML, there are other models with results similar to theorem 1 that hold. One such example is a <em><strong> Post-Nonlinear Causal Model </strong></em> (PNCM), which satisfies the following property:
+
+<math>$$\varphi (X, N_Y) = \phi_2( \phi_1(X) + N_Y)$$</math>
+
+Here is a theorem for a PNCM that's similar to theorem 1 and is from Zhang and Hyvärinen's [UAI2009 paper](https://arxiv.org/abs/1205.2599) that gives us a very similar flavor of result.
+
+<em><strong>Theorem 2.</strong></em> The only PNCM models that admit both causal directions satisfy the following differential equation:
+
+<math>$$ \eta_1''' - \frac{\eta_1'' h''}{h'} = \left(\frac{\eta_2'\eta_2'''}{\eta_2''} - 2\eta_2''\right)\cdot h'h'' - \frac{\eta_2''' h' \eta_1''}{\eta_2''} + \eta_2' \cdot\left(h''' - \frac{h''^2}{h'} \right) $$</math>
+
+{{<spoiler text="Proof">}}
+  Read the [original paper](https://arxiv.org/abs/1205.2599).
+{{</spoiler>}}
+
+Zhang and Hyvärinen also have a great [survey](https://www.cs.helsinki.fi/u/ahyvarin/papers/Zhang16.pdf) of other nonlinear causal models for causal learing. 
+
+While there is plenty more out there than just additive noise models, there's a lot of potential for finding newer models that are more robust and usable in different cases. 
+
+That said, hopefully this gives us more clarity on the possible applications as well as the limitations of the ideas discussed thus far! Stay tuned for more!
 
