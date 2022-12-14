@@ -238,5 +238,20 @@ Zhang and Hyvärinen also have a great [survey](https://www.cs.helsinki.fi/u/ahy
 
 While there is plenty more out there than just additive noise models, there's a lot of potential for finding newer models that are more robust and usable in different cases. 
 
-That said, hopefully this gives us more clarity on the possible applications as well as the limitations of the ideas discussed thus far! Stay tuned for more!
+That said, hopefully this gives us more clarity on the possible applications as well as the limitations of the ideas discussed thus far!
 
+--------------------------------
+
+<strong>Conclusion</strong>
+
+We've looked at existing work suggesting causal structures in data matter when applying machine learning algorithms and studied looked at a mathematical example of why this might be the case. We saw that machine learning algorithms not only differ in their performance depending on underlying causal structure, but are also capable of detecting these structures. We found that in the case of studying additive noise models, we can detect the causal structure in two variable cases in both synthetic and real data, and also how this can be extended to multiple variables in the synthetic data case. There are three problems that can arise that we looked at:
+
+1. The algorithm for detecting higher variable causal graphs is slow, since the number of graphs grows super-exponentially with the number of variables. So, in problems with large numbers of variables, we need to apply standard inference techniques to narrow the number of graphs. 
+
+2. It is not clear which nonlinear regressions one should apply to fit additive noise models to data. This will require domain knowledge and some experimenting.
+
+3. We focussed largely on the assumption that we have an additive noise model - a restrictive assumption that does apply to some cases (as seen here). There are other models that have been studied, such as post nonlinear models, however there is more work to be done.
+
+Some other issues that need to be studied that we did not include are the cases with higher dimensional data (for example, the [MNIST dataset](https://www.tensorflow.org/datasets/catalog/mnist), an anticausal dataset using images that are <math>$28$ by $28$ </math> pixels), more complex noise (for example, a mixed noise model as opposed to Gaussian and uniform noise), and number of training samples. There is also work to be done in studying what other models can one do such analyses under. 
+
+Overall, answering the questions posed here can be applied to both the fields of machine learning and causal inference. In machine learning, understanding how underlying causal structures can affect models can have a direct impact in improving performance and choosing better algorithms to achieve desired tasks. In causal inference, this work shows that ML techniques can be used to detect causal relationships in data both in synthetic and real world cases, allowing for a practical tool for finding evidence of causation. This is a worthy topic of study, and I look forward to studying these questions. If you find this interesting, feel free to get in touch! 
