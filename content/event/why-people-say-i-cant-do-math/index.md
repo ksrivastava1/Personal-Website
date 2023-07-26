@@ -5,8 +5,8 @@ abstract: "Mathematicians and math educators often hear the phrase \"I can't do
   mathematics - logic, the capacity to break down ideas, and rational thought.
   But in many education systems today, many of us convince ourselves that math
   is beyond our capabilities. In this talk, I explore why that is. "
-summary: PCMI Ignite Talks, Park City, UT
-location: Park City Math Institute
+summary: PCMI Ignite Talks, Park City Math Institute
+location: Park City, Utah
 date: 2019-07-16T10:00:05.322Z
 date_end: 2019-07-16T11:00:00.000Z
 all_day: false

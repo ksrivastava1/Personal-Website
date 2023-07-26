@@ -3,10 +3,10 @@ slides: example
 url_pdf: ""
 summary: ""
 url_video: ""
-date: 2020-10-06T00:00:00.000Z
+date: 2022-12-12T00:00:00.000Z
 external_link: ""
 url_slides: ""
-title: Causal Inference
+title: Causal Inference and Machine Learning
 tags: []
 links: []
 image:
@@ -16,7 +16,11 @@ url_code: ""
 ---
 
 
-This is a blog for my project on the applications of causal inference to machine learning. 
+This is a blog for my project on the applications of machine learning to discover causal relationships in data in Fall 2022. 
+
+How can we use machine learning to uncover causal relationships in the world? Finding causation is a very fundamental question in science. It's pretty clear to us that when we are young, an increase in our age usually <em> causes </em> an increase in height. But do certain foods cause health benefits or harmful diseases? How can we discover these causal relationships in the data we observe? We normally see machine learning as a tool for training machines to achieve certain (usually predictive or generative) tasks with data. This post exposits how we can possibly leverage recent results showing varying ML performances on data with differing causal structures to discover causal relationships in unknown data. 
+
+Every section is dedicated to diving a little bit deeper from the previous one about what the problem we're looking at is, some current relevant work, and what questions we want to look at next. All the relevant code I write can be found on [my github](https://github.com/ksrivastava1/causal_inference). If you want to learn more about this, reach out to me! I'd love to chat. 
 
 ------------------------------
 
@@ -26,12 +30,11 @@ What do we really mean when we say "the economy does better when my favorite pol
 
 I'm interested in causal inference, at the highest level, because it is, in some sense, the most natural question to ask when studying complex datasets. Questions about causation are often the most interesting and, so, inherently the most enlightening in any survey. We know when the economy rises and falls but it's establishing its cause thats the most interesting. Mathematically, this presents much richer questions: how does one quantitatively establish causation between variables? how is causation structurally different from phenomenon to phenomenon? and how do we quantify that difference? These questions have a lot of implication on not only our understanding of economic and natural phenomenon but also about the human mind and our understanding of how we learn things and form such associations and establish legitimate and unfound causal relationships. I'm interested in these sorts of questions and am looking to explore these in greater depth because I'm fascinated by the question of causation, the mathematical bases on which it can be established, and the understanding of human behavior and learning patterns that this brings. 
 
-
 -------------------------------
 
 <strong>What question am I interested in?</strong>
 
-I'm interested in the applications of causal inference to machine learning (ML). The main aim for any ML problem is to predict a label <strong> y </strong> from a feature vector <strong> x </strong> by training an algorithm on some known features. Different approaches require different training data: <em><strong> supervised learning </strong></em> refers to the method of training algorithms using feature vectors with known labels, while <em><strong> semisupervised learning </strong></em> (SSL) refers to the method of training algorithms with some data with known labels and some with unknown labels. The underlying assumption in most ML problems is that we are trying to find <em> associations or correlations</em> between the labels and features to make predictions; we normally don't care about their causal structure. It doesn't seem to matter if <strong> x </strong> causes <strong> y </strong> or vice versa since algorithms are expected to perform the same. However, this has shown to not necessarily be true. Scholköpf et al. showed in their [2012 ICML paper](https://icml.cc/2012/papers/625.pdf) that there is in fact a difference in performance in these two cases. SSL algorithms performed better on <em>anticausal problems</em> (i.e. where <strong> x </strong> causes <strong> y </strong>) than in <em>causal problems</em> (vice versa). Figure 1 below illustrates this.  
+I'm interested in the interface of causal inference and machine learning (ML). ML refers to the area of computer science and optimization where we train a computer to achieve a certain task using a learning principle and data. The two types of machine learning relevant to this post are <em><strong> supervised learning </strong></em> and <em><strong> semi supervised learning </strong></em>. <em><strong> Supervised learning </strong></em> refers to the method of training algorithms using feature vectors with known labels. Here, the aim is to predict a label <strong> y </strong> from a feature vector <strong> x </strong> by training an algorithm on some known features. <em><strong> Semi-supervised learning </strong></em> (SSL) refers to the method of training algorithms with some data with known labels and some with unknown labels. The underlying assumption in most ML problems is that we are trying to find <em> associations or correlations</em> between the labels and features to make predictions; we normally don't care about their causal structure. It doesn't seem to matter if <strong> x </strong> causes <strong> y </strong> or vice versa since algorithms are expected to perform the same. However, this has shown to not necessarily be true. Scholköpf et al. showed in their [2012 ICML paper](https://icml.cc/2012/papers/625.pdf) that there is in fact a difference in performance in these two cases. SSL algorithms performed better on <em>anticausal problems</em> (i.e. where <strong> x </strong> causes <strong> y </strong>) than in <em>causal problems</em> (vice versa). Figure 1 below illustrates this.  
 
 {{< figure src="ICML_data.png" caption="The benefit of SSL depends on the causal structure. Each column of points corresponds to a benchmark data set from the UCI repository and shows the performance of six different base classifiers augmented with self-training, a generic method for SSL. Performance is measured by percentage decrease of error relative to the base classifier, that is, (error(base)−error(self-train))/error(base). Self-training overall does not help for the causal data sets, but it does help for some of the anticausal confounded data sets [from [Scholköpf et al. 2012](https://icml.cc/2012/papers/625.pdf)]." numbered="true" >}}
 
@@ -67,6 +70,8 @@ Notice that the distribution for $ P(X|Y)$ does not change but the distribution 
 1. Can we prove that SSL performs better in anticausal learning problems than other techniques, even for specific cases?
 
 2. Is there an example of a dataset that is traditionally studied with ML techniques agnostic of causal structure that might be better suited to SSL techniques due to an underlying causal structure? 
+
+3. Can we actually use these differences in performances to discover causal relationships in data? 
 
 --------------------------------
 

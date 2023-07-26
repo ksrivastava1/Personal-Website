@@ -2,11 +2,12 @@
 title: Karan Srivastava
 role: PhD Student, Mathematics
 avatar_filename: avatar.png
-bio: My research interests include algebraic geometry, number theory, and
-  machine learning
+bio: My research interests include machine learning, reinforcement learning, combinatorics, and algebraic geometry
 interests:
-  - Algebraic Geometry
   - Machine Learning
+  - Reinforcement Learning
+  - Combinatorics
+  - Algebraic Geometry
 social:
   - icon: envelope
     icon_pack: fas
@@ -18,7 +19,7 @@ social:
       header: false
     icon_pack: ai
     icon: cv
-    link: "files/CV.pdf" 
+    link: "files/Karan_Srivastava_CV.pdf" 
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/ksrivastava1/
@@ -40,10 +41,10 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-I'm a third year PhD student in mathematics. I'm broadly interested in [algebraic geometry](https://en.wikipedia.org/wiki/Algebraic_geometry) - a cool field of pure math about studying (polynomial) surfaces using the tools of symmetries and algebra - and [machine learning](https://en.wikipedia.org/wiki/Machine_learning) - a cool field of computer science about studying how computers can learn to perform tasks with high accuracy with little to no prior knowledge about the task itself. 
+I'm a fourth year PhD student in mathematics advised by [Jordan Ellenberg](https://www.youtube.com/watch?v=kZTKuMBJP7Y). I'm interested in how we can apply [Reinforcement Learning (RL)](https://www.youtube.com/watch?v=zR11FLZ-O9M) - a field of [machine learning](https://www.youtube.com/watch?v=5q87K1WaoFI) where we train a computer agent to learn how to take actions in an environment - to problems in pure mathematics and science to help mathematicians and scientists conjecture, discover, and prove new truths in their fields. 
 
-Currently, my research focusses on studying incomplete data through the lens of algebraic geometry. Some other questions I ponder include how machine learning can be used as a tool to aid mathematicians, how pure math and algebra can be used to create new methods of data completion, and what connections can we find between algebraic geometry and machine learning. I'm always on the lookout for interesting questions to work on and am interested in exploring questions in these fields. I'm also affiliated with the [Wisconsin Institute for Discovery](https://wid.wisc.edu/)
+Currently, my research focusses on creating generative RL to generate useful, interpretable data in additive combinatorics for mathematicians in this area to use to inform conjectures and proofs. I'm excited by what mathematics and science will look like in 50 years and the ai-powered tools they will have access to, and I'm enjoying exploring this space of possibilities. I'm also affiliated with the [Wisconsin Institute for Discovery](https://wid.wisc.edu/) and the [Institute for Foundations of Data-Science](https://ifds.info/).
 
 I was born in Kolkata, India - a city rich in history and culture with bustling streets and great food - and lived there until I moved to the calmer lands of Illinois, where I got my BSc in Mathematics at the [University of Illinois at Urbana-Champaign](https://illinois.edu/). I also spent a semester at the [Independent University of Moscow](https://ium.mccme.ru/english/) as a part of the [Math in Moscow](https://mathinmoscow.org/) study abroad program.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "files/Karan_Srivastava_Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

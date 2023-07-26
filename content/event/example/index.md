@@ -2,11 +2,10 @@
 abstract: "'Given a chessboard with a coin on every square randomly oriented and a key hidden under one of them; player one knows where the key is and flips a single coin; player 2, using only the information of the new coin arrangement must determine where the key is. Is there a winning strategy?' In this talk, we will explore this classic puzzle in a more generalized context, with n squares and d sided dice on every square. We'll see when the game is solvable and in doing so, see how the answer relies on group theory and the existence of certain groups!"
 slides: ""
 url_pdf: ""
-summary: AMS Student Chapter Seminar, Madison, WI
+summary: AMS Student Chapter Seminar, University of Wisconsin-Madison
 title: "An 'almost impossible' puzzle and group theory"
 location: |-
-  UW Madison Math Dept,
-  Van Vleck 911
+  Madison, Wisconsin
 date: 2021-10-06T15:30:00.000Z
 date_end: 2021-10-06T16:30:00.000Z
 all_day: false
