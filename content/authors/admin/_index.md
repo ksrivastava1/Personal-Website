@@ -41,7 +41,7 @@ email: ""
 superuser: true
 highlight_name: true
 ---
-I'm a fourth year PhD student in mathematics advised by [Jordan Ellenberg](https://www.youtube.com/watch?v=kZTKuMBJP7Y). I'm interested in how we can apply [Reinforcement Learning (RL)](https://www.youtube.com/watch?v=zR11FLZ-O9M) - a field of [machine learning](https://www.youtube.com/watch?v=5q87K1WaoFI) where we train a computer agent to learn how to take actions in an environment - to problems in pure mathematics and science to help mathematicians and scientists conjecture, discover, and prove new truths in their fields. 
+I'm a fifth year PhD student in mathematics advised by [Jordan Ellenberg](https://www.youtube.com/watch?v=kZTKuMBJP7Y). I'm interested in how we can apply [Reinforcement Learning (RL)](https://www.youtube.com/watch?v=zR11FLZ-O9M) - a field of [machine learning](https://www.youtube.com/watch?v=5q87K1WaoFI) where we train a computer agent to learn how to take actions in an environment - to problems in pure mathematics and science to help mathematicians and scientists conjecture, discover, and prove new truths in their fields. 
 
 Currently, my research focusses on creating generative RL to generate useful, interpretable data in additive combinatorics for mathematicians in this area to use to inform conjectures and proofs. I'm excited by what mathematics and science will look like in 100 years and the ai-powered tools academics in the future will have access to, and I'm driven to do my small part in this rich field of possibilites. I'm also affiliated with the [Wisconsin Institute for Discovery](https://wid.wisc.edu/) and the [Institute for Foundations of Data-Science](https://ifds.info/).
 
