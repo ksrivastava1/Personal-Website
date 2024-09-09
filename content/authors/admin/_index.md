@@ -31,9 +31,9 @@ organizations:
     url: https://www.wisc.edu/
 education:
   courses:
-    - course: PhD in Mathematics
+    - course: MA, PhD in Mathematics
       institution: University of Wisconsin-Madison
-      year: 2025
+      year: 2026
     - course: BSc in Mathematics
       institution: University of Illinois at Urbana-Champaign
       year: 2020
