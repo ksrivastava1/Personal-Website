@@ -4,7 +4,7 @@ abstract: In this prelim / specialty exam talk, I present my work in generating 
 summary: University of Wisconsin-Madison
 location: Madison, Wisconsin
 date: 2024-01-18T11:00:05.322Z
-date_end: 2024-01-18T13:00:00.000Z
+date_end: 2024-01-18T13:30:00.000Z
 all_day: false
 event: PhD Prelim / Specialty Exam Presentation
 event_url: 
