@@ -22,7 +22,18 @@ publication_types: ["2"]
 publication: "Preprint"
 publication_short: "Preprint"
 
-abstract: A core goal in modern science is to harness recent advances in AI and computer processing to automate and accelerate the scientific method. Symbolic regression can fit interpretable models to data, but these models often sit outside established theory. Recent systems (e.g., AI Descartes, AI Hilbert) enforce derivability from prior axioms. However, sometimes new data and associated hypotheses derived from data are not consistent with existing theory because the existing theory is incomplete or incorrect. Automating abductive inference to close this gap remains open. We propose a solution: an algebraic geometry-based system that, given an incomplete axiom system and a hypothesis that it cannot explain, automatically generates a minimal set of missing axioms that suffices to derive the axiom, as long as axioms and hypotheses are expressible as polynomial equations. We formally establish necessary and sufficient conditions for the successful retrieval of such axioms. We illustrate the efficacy of our approach by demonstrating its ability to explain Kepler's third law and a few other laws, even when key axioms are absent.
+abstract: >
+  A core goal in modern science is to harness recent advances in AI and computer processing to automate and
+  accelerate the scientific method. Symbolic regression can fit interpretable models to data, but these models
+  often sit outside established theory. Recent systems (e.g., AI Descartes, AI Hilbert) enforce derivability
+  from prior axioms. However, sometimes new data and associated hypotheses derived from data are not consistent
+  with existing theory because the existing theory is incomplete or incorrect. Automating abductive inference
+  to close this gap remains open. We propose a solution: an algebraic geometry-based system that, given an
+  incomplete axiom system and a hypothesis that it cannot explain, automatically generates a minimal set of
+  missing axioms that suffices to derive the axiom, as long as axioms and hypotheses are expressible as
+  polynomial equations. We formally establish necessary and sufficient conditions for the successful retrieval
+  of such axioms. We illustrate the efficacy of our approach by demonstrating its ability to explain Kepler's
+  third law and a few other laws, even when key axioms are absent.
 
 # Summary. An optional shortened abstract.
 summary: 
