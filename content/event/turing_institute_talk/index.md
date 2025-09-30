@@ -6,7 +6,7 @@ location: London, England
 date: 2025-07-14T17:00:00.322Z
 date_end: 2025-07-14T18:00:00.000Z
 all_day: false
-event: Graduate Applied Math Seminar
+event: Alan Turing Institute Talk
 event_url: 
 publishDate: 2022-06-23T06:08:57.948Z
 draft: false
