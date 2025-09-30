@@ -2,11 +2,11 @@
 title: "Algorithm Generation and Funsearch"
 abstract: In my work in helping organize the SL Math Summer School for graduate students on Principled Scientific Discovery with Formal Methods, I gave a lecture and tutorial series on algorithm generation, [Funsearch](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/) - a DeepMind framework for genetically evolving LLM-sampled algorithms, as well as an implementation of this algorithm from our [2025 Paper on Generative Modeling for Mathematical Discovery](https://arxiv.org/abs/2503.11061). 
 summary: SL Math Summer School Lecture
-location: IBM T. J. Watson Research Center, Yorktown Heights, New York
+location: Yorktown Heights, New York
 date: 2025-07-14T11:00:00.322Z
 date_end: 2025-07-14T17:00:00.000Z
 all_day: false
-event: SL Math Summer School - Principled Scientific Discovery with Formal Methods
+event: SL Math Summer School - Principled Scientific Discovery with Formal Methods at IBM T. J. Watson Research Center, Yorktown Heights, NY
 event_url: 
 publishDate: 2022-06-23T06:08:57.948Z
 draft: false
